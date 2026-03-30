@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Faux-Fire Official</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Faux-Fire<span> Official</span></a>
+
+                <div class="nav-links">
+                    <div class="nav-item">
+                        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    </div>
+
+                    <!-- <div class="nav-item">
+                        <a href="index.html#projects" class="nav-link">My Work <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="index.html#fullstack-projects">Web Systems (PHP/MySQL)</a>
+
+                            <a href="index.html#frontend-projects">Interactive UI (HTML/CSS/JS)</a>
+
+                            <a href="index.html#creative-works">Graphics & Branding</a>
+
+                            <a href="https://github.com/M-Iqbal-Dev" target="_blank">View Source Code</a>
+                        </div>
+                    </div> -->
+
+                    <div class="nav-item">
+                        <a href="index.html#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-page" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span>Touch</span></h2>
+                <p>Ready to start your project? Fill out the form below.</p>
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form"
+                enctype="multipart/form-data">
+                <input type="hidden" name="access_key" value="98b3146a-ce32-48a5-ab00-1c31c0be3701">
+
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+    <label>Email Address</label>
+    <input type="email" name="email" placeholder="example@gmail.com" required>
+    <p class="form-helper">Please double-check your email so I can get back to you!</p>
+</div>
+                </div>
+
+                <div class="input-group">
+                    <label>Project Subject</label>
+                    <input type="text" name="subject" placeholder="What are you looking for?" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" placeholder="Tell me about your project details..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn primary-btn" id="submit-btn"
+                    style="width: 100%; justify-content: center;">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+
+                <div id="form-result"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column brand-col">
+                    <h3><span>Faux-Fire</span> Official</h3>
+                    <p>Delivering high-performance web systems and creative branding solutions from Karachi, Pakistan.
+                        Transforming ideas into digital reality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/M-Iqbal-Dev"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Explore</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Me</a></li>
+                        <li><a href="index.html#projects">My Projects</a></li>
+                        <li><a href="index.html#skills">Tech Stack</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Core Services</h3>
+                    <ul>
+                        <li><a href="index.html#fullstack-projects">Web Development</a></li>
+                        <li><a href="index.html#creative-works">Graphic Design</a></li>
+                        <li><a href="index.html#ui-designs">UI/UX Layouts</a></li>
+                        <li><a href="contact.html">Hire Me Now</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column contact-col">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</li>
+                        <li><i class="fas fa-envelope"></i> fauxfireofficial@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span>Faux-Fire Official</span> | Designed & Developed by M. Iqbal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <div id="mobileProjectsDropdown" class="mobile-projects-dropdown">
+        <a href="index.html#fullstack-projects" class="mobile-dropdown-link">Web Systems (PHP/MySQL)</a>
+
+        <a href="index.html#frontend-projects" class="mobile-dropdown-link">Frontend Layouts (HTML/CSS)</a>
+
+        <a href="index.html#creative-works" class="mobile-dropdown-link">Graphics & Branding</a>
+
+        <a href="https://github.com/M-Iqbal-Dev" class="mobile-dropdown-link" target="_blank">View GitHub Code</a>
+    </div>
+
+    <nav class="mobile-bottom-nav">
+        <a href="index.html#home" class="mobile-nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <button class="mobile-nav-item" onclick="toggleMobileProjects(this)">
+            <i class="fas fa-laptop-code"></i>
+            <span>Projects</span>
+        </button>
+        <a href="contact.html" class="mobile-nav-item active">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+   <script>
+    const form = document.getElementById('contact-form');
+    const result = document.getElementById('form-result');
+    const btnText = document.querySelector('#submit-btn span');
+
+    // Email check karne ka function (Regex)
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email.toLowerCase());
+    }
+
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const userEmail = formData.get('email');
+
+            // 1. Pehle Validation check karein
+            if (!validateEmail(userEmail)) {
+                result.innerHTML = `<div class="error-msg">❌ Please enter a valid email address!</div>`;
+                return; // Yahin rok do, fetch mat chalao
+            }
+
+            // 2. Agar email theek hai, toh sending shuru karein
+            btnText.innerText = "Sending...";
+            document.getElementById('submit-btn').disabled = true;
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = `<div class="success-msg">✅ Message sent successfully! I'll contact you soon.</div>`;
+                    form.reset();
+                } else {
+                    result.innerHTML = `<div class="error-msg">❌ ${json.message}</div>`;
+                }
+            })
+            .catch(error => {
+                result.innerHTML = `<div class="error-msg">Something went wrong. Please try again!</div>`;
+            })
+            .then(function () {
+                btnText.innerText = "Send Message";
+                document.getElementById('submit-btn').disabled = false;
+                setTimeout(() => {
+                    result.innerHTML = "";
+                }, 5000);
+            });
+        });
+    }
+
+    // Mobile Nav Logic (Bilkul theek hai)
+    function toggleMobileProjects(btn) {
+        const dropdown = document.getElementById('mobileProjectsDropdown');
+        dropdown.classList.toggle('show');
+        document.querySelectorAll('.mobile-nav-item').forEach(item => item.classList.remove('active'));
+        btn.classList.add('active');
+
+        if (dropdown.classList.contains('show')) {
+            const closeDropdown = (e) => {
+                if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
+                    dropdown.classList.remove('show');
+                    document.removeEventListener('click', closeDropdown);
+                }
+            };
+            setTimeout(() => document.addEventListener('click', closeDropdown), 10);
+        }
+    }
+</script>
+
+</body>
+
+</html>

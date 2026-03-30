@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faux-Fire Official</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Faux-Fire<span> Official</span></a>
+
+                <div class="nav-links">
+                    <div class="nav-item">
+                        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    </div>
+
+                    <!-- <div class="nav-item">
+                        <a href="#projects" class="nav-link">My Work <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="#fullstack-projects">Web Systems (PHP/MySQL)</a>
+
+                            <a href="#frontend-projects">Interactive UI (HTML/CSS/JS)</a>
+
+                            <a href="#creative-works">Graphics & Branding</a>
+
+                            <a href="https://github.com/M-Iqbal-Dev" target="_blank">View Source Code</a>
+                        </div>
+                    </div> -->
+
+                    <div class="nav-item">
+                        <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container hero-wrapper">
+            <div class="hero-content">
+                <h4 class="fade-in">Web Developer & Graphic Designer</h4>
+                <h1 class="fade-in">Hi, I'm <span class="highlight">Muhammad Iqbal</span></h1>
+                <p class="fade-in">
+                    I build robust web applications with <span>PHP & MySQL</span> and create stunning visual designs
+                    using <span>Illustrator & Figma</span>. Turning your ideas into high-performance digital reality.
+                </p>
+
+                <div class="hero-btns fade-in">
+                    <a href="#projects" class="btn primary-btn">Explore Projects</a>
+                    <a href="contact.html" class="btn secondary-btn">Let's Talk</a>
+                </div>
+            </div>
+
+            <div class="hero-image fade-in">
+                <img src="Assest/bgimage.png" alt="Muhammad Iqbal Developer">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">My <span>Services</span></h2>
+            <p class="section-subtitle">What I can do for you</p>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, high-performance websites using modern technologies like HTML5, CSS3,
+                        JavaScript, and PHP.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Creating eye-catching commercial ads, custom logos, and vector illustrations using Figma and
+                        Illustrator.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-server service-icon"></i>
+                    <h3>Backend Solutions</h3>
+                    <p>Designing robust server-side architectures and secure database management systems for scalable
+                        applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Tech</span> Journey</h2>
+            <p class="section-subtitle">A collection of my latest work.</p>
+
+            <div class="projects-grid">
+                <div class="project-card fade-in" onclick="openProject(
+    'Vaccination Management System', 
+    ['Assest/Vaccination Thumb.png','Assest/Home.png', 'Assest/Parent Deshboard.png', 'Assest/Admin Deshboard.png', 'Assest/Hospital Deshboard.png','Assest/Parent Profile.png','Assest/Manage Users.png'], 
+    'A complete web-based immunization management system for children (0-18 years) with role-based dashboards for parents, hospitals, and admin. Features include OTP verification, AI vaccine recommendations, appointment booking, and detailed reports with CSV export.',
+    'https://vaccination-management-system.page.gd/',
+    'https://github.com/fauxfireofficial/Vaccination-Management-System'
+)">
+    <div class="project-img">
+        <div class="badge">PHP Full-Stack</div>
+        <img src="Assest/Vaccination Thumb.png" alt="Vaccination Management System">
+    </div>
+    <div class="project-info">
+        <h3>Vaccination Management System</h3>
+        <p>Child immunization tracker with AI recommendations, OTP verification, and role-based dashboards (Parent/Hospital/Admin).</p>
+        <div class="tech-stack">
+            <span>#PHP</span> 
+            <span>#MySQL</span> 
+            <span>#Bootstrap5</span> 
+            <span>#PHPMailer</span> 
+            <span>#TCPDF</span> 
+            <span>#OTP</span> 
+            <span>#AI-Assistant</span>
+        </div>
+    </div>
+</div>
+
+                <div class="project-card fade-in" onclick="openProject(
+    'Pixo Gradient Studio & AI Generator', 
+    ['Assest/Pixo Thumb.png','Assest/Pixo1.png', 'Assest/Pixo2.png', 'Assest/Pixo3.png', 'Assest/Pixo4.png', 'Assest/Pixo5.png'],
+   'A hybrid creative Android app featuring AI image generation, real-time gradient overlays, interactive before/after comparison, and a smart credit system. Successfully published on Uptodown as a production-ready application.',
+    'https://pixogradient.netlify.app/', 
+    'https://github.com/fauxfireofficial/PixoGradient-Pro'
+)">
+                    <div class="project-img">
+                        <div class="badge">AI & Creative Tool</div>
+                        <img src="Assest/Pixo Thumb.png" alt="Pixo AI Gradient Editor">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pixo Gradient Studio</h3>
+                        <p>Interactive AI image generator and professional gradient editor with real-time preview.</p>
+
+                        <div class="tech-stack">
+    <span>#JavaScript</span>
+    <span>#HTML5</span>
+    <span>#CSS3</span>
+    <span>#AI Integration</span>
+    <span>#Image Editing</span>
+    <span>#Cordova</span>
+</div>
+
+                    </div>
+                </div>
+                <!-- <div class="project-card fade-in" onclick="openProject(
+                'E-Commerce CRUD', 
+                ['Assest/crud-screenshot.jpg', 'Assest/crud-screenshot2.jpg'], 
+               'A backend-focused management tool designed for administrative desktop environments. It allows users to manage, update, and delete products with real-time image upload and secure database integration.',
+                'product.php', 
+                'https://github.com/M-Iqbal-Dev/php-ecommerce-crud'
+            )">
+                    <div class="project-img">
+                        <div class="badge">PHP Full-Stack</div>
+                        <img src="Assest/crud-screenshot.jpg" alt="PHP CRUD System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Inventory Management System</h3>
+                        <p>A server-side application for managing product catalogs with image processing.</p>
+                        <div class="tech-stack">
+                            <span>#PHP</span> <span>#MySQL</span> <span>#Backend</span> <span>#ImageUpload</span>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <div class="project-card fade-in" onclick="openProject(
+        'Commercial Burger Branding', 
+        ['Assest/burger-ad.jpg'], 
+        'A high-fidelity social media advertisement created in Figma. This project focuses on professional product presentation, using color psychology and modern typography to attract customers. It demonstrates my ability to blend creative art with business marketing needs.',
+        'https://www.figma.com/design/BfldaxH5rUdpY9KpisIpjc/Faux-Fire?node-id=35-2', 
+        '' 
+    )">
+                    <div class="project-img">
+                        <div class="badge">Visual Design</div>
+                        <img src="Assest/burger-ad.jpg" alt="Commercial Food Ad">
+                    </div>
+                    <div class="project-info">
+                        <h3>Burger Branding Ad</h3>
+                        <p>Premium social media ad design focusing on visual composition and branding.</p>
+                        <div class="tech-stack">
+                            <span>#Figma</span> <span>#VisualDesign</span> <span>#Branding</span> <span>#AdDesign</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in" onclick="openProject(
+                'Virtual Assistant', 
+                ['Assest/assistant-screenshot.jpg'], 
+                'A professional virtual assistant built for client inquiries, web development support, and collaboration. It features a smart helper bot that responds to gaming and tech queries.', 
+                'https://fauxfirevirtualassistant.netlify.app/', 
+                'https://github.com/fauxfireofficial/Mini-virtual-assistant'
+            )">
+                    <div class="project-img">
+                        <div class="badge">Virtual Assistant</div>
+                        <img src="Assest/assistant-screenshot.jpg" alt="Faux Fire Virtual Assistant">
+                    </div>
+                    <div class="project-info">
+                        <h3>Virtual Assistant</h3>
+                        <p>A professional virtual assistant built for client inquiries, web development support...</p>
+                        <div class="tech-stack">
+                            <span>#HTML</span> <span>#CSS</span> <span>#JavaScript</span> <span>#Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-all-container">
+                <a href="#" class="view-all-btn">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <p class="section-subtitle">Technologies I work with</p>
+
+            <div class="skills-wrapper">
+                <div class="skill-category fade-in">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-html5"></i> <span>HTML5</span></div>
+                        <div class="skill-item"><i class="fab fa-css3-alt"></i> <span>CSS3</span></div>
+                        <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+                        <!-- <div class="skill-item"><i class="fab fa-react"></i> <span>React</span></div> -->
+                        <div class="skill-item"><i class="fab fa-bootstrap"></i> <span>Bootstrap</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-php"></i> <span>PHP</span></div>
+                        <!-- <div class="skill-item"><i class="fab fa-node"></i> <span>Node.js</span></div> -->
+                        <div class="skill-item"><i class="fas fa-database"></i> <span>MySQL</span></div>
+                        <!-- <div class="skill-item"><i class="fab fa-python"></i> <span>Python</span></div> -->
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-figma"></i> <span>Figma</span></div>
+                        <div class="skill-item"><i class="fas fa-pen-nib"></i> <span>Illustrator</span></div>
+                        <div class="skill-item"><i class="fab fa-adobe"></i> <span>Photoshop</span></div>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-git-alt"></i> <span>Git</span></div>
+                        <div class="skill-item"><i class="fab fa-github"></i> <span>GitHub</span></div>
+                        <div class="skill-item"><i class="fas fa-terminal"></i> <span>Command Line</span></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">My <span>Journey</span></h2>
+            <p class="section-subtitle">How I built my tech & design foundation</p>
+
+            <div class="timeline">
+                <div class="timeline-item left fade-in">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Present</span>
+                        <h3>Full-Stack Web Development</h3>
+                        <h4>Self-Taught Developer</h4>
+                        <p>Building high-performance web applications using PHP, MySQL, and modern JavaScript. Focusing
+                            on responsive design and secure backend logic.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right fade-in">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Graphic Designer</h3>
+                        <h4>Creative Visual Artist</h4>
+                        <p>Gained expertise in Adobe Illustrator and Figma. Specialized in creating high-impact
+                            commercial ads, custom vector icons, and branding assets with a focus on clean visual
+                            aesthetics.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left fade-in">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Early 2024</span>
+                        <h3>Logic & Game Development</h3>
+                        <h4>Fundamental Learning</h4>
+                        <p>Explored game development mechanics and logic, which sparked my interest in coding and
+                            complex problem-solving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="projectModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+                    <div class="slider-wrapper">
+                        <img id="modalImg" class="slide" src="" alt="Preview 1" onclick="viewFullImage('modalImg')">
+                        <img id="modalImg2" class="slide" src="" alt="Preview 2" onclick="viewFullImage('modalImg2')">
+                    </div>
+
+                    <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+
+                    <div class="slider-dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <h2 id="modalTitle">Project Name</h2>
+                    <p id="modalDesc">Project description goes here...</p>
+
+                    <div class="modal-links">
+                        <button onclick="viewCurrentSlideFull()" class="modal-btn source">
+                            <i class="fas fa-search-plus"></i> View Image
+                        </button>
+                        <a href="#" id="liveLink" target="_blank" class="modal-btn live">
+                            <i class="fas fa-external-link-alt"></i> Try Live Demo
+                        </a>
+
+                        <a href="#" id="sourceLink" target="_blank" class="modal-btn source">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageViewer" class="image-viewer-overlay">
+        <span class="close-viewer" onclick="closeImageViewer(event)">&times;</span>
+        <img id="fullViewImg" alt="Full Image" onclick="event.stopPropagation()">
+    </div>
+
+    <section class="about" id="about">
+        <div class="container about-wrapper">
+            <div class="about-image fade-in">
+                <div class="image-frame">
+                    <img src="Assest/MyPhoto.png" alt="Muhammad Iqbal">
+                </div>
+            </div>
+            <div class="about-text fade-in">
+                <h2 class="about-heading">About Me</h2>
+                <div class="name-box">
+                    <h4>My Name Is</h4>
+                    <h3 class="my-name">Muhammad <span>Iqbal</span></h3>
+                </div>
+
+                <p>I am a passionate <strong>Full-Stack Developer & Visual Designer</strong> from Karachi. My journey
+                    started with a curiosity for game logic and visual design, which evolved into a career of building
+                    modern web solutions. I don't just write code; I design experiences that are functional, beautiful,
+                    and user-centric.</p>
+
+                <div class="about-details">
+                    <div class="detail-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h4>Full-Stack Development</h4>
+                            <p>Crafting seamless applications with <strong>PHP, MySQL,</strong> and <strong>Modern
+                                    JavaScript</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <i class="fas fa-bezier-curve"></i>
+                        <div>
+                            <h4>Graphic Designer</h4>
+                            <p>Designing high-fidelity templates and visual assets using <strong>Figma</strong> and
+                                <strong>Illustrator</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-btns" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <!-- <a href="resume.pdf" class="btn secondary-btn" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a> -->
+                    <a href="#projects" class="btn primary-btn"
+                        style="background: #ffd700; color: #000; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold;">
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column brand-col">
+                    <h3><span>Faux-Fire</span> Official</h3>
+                    <p>Delivering high-performance web systems and creative branding solutions from Karachi, Pakistan.
+                        Transforming ideas into digital reality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/fauxfireofficial"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Explore</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">My Projects</a></li>
+                        <li><a href="#skills">Tech Stack</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Core Services</h3>
+                    <ul>
+                        <li><a href="#fullstack-projects">Web Development</a></li>
+                        <li><a href="#creative-works">Graphic Design</a></li>
+                        <li><a href="#ui-designs">UI/UX Layouts</a></li>
+                        <li><a href="contact.html">Hire Me Now</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column contact-col">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</li>
+                        <li><i class="fas fa-envelope"></i> fauxfireofficial@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span>Faux-Fire Official</span> | Designed & Developed by M. Iqbal</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Mobile Bottom Navigation -->
+    <div id="mobileProjectsDropdown" class="mobile-projects-dropdown">
+        <a href="#fullstack-projects" class="mobile-dropdown-link">Web Systems (PHP/MySQL)</a>
+
+        <a href="#frontend-projects" class="mobile-dropdown-link">Frontend Layouts (HTML/CSS)</a>
+
+        <a href="#creative-works" class="mobile-dropdown-link">Graphics & Branding</a>
+
+        <a href="https://github.com/M-Iqbal-Dev" class="mobile-dropdown-link" target="_blank">View GitHub Code</a>
+    </div>
+
+    <nav class="mobile-bottom-nav">
+        <a href="#home" class="mobile-nav-item active" onclick="setActiveNav(this)">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <button class="mobile-nav-item" onclick="toggleMobileProjects(this)">
+            <i class="fas fa-laptop-code"></i>
+            <span>Projects</span>
+        </button>
+        <a href="contact.html" class="mobile-nav-item" onclick="setActiveNav(this)">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+    <script>
+        let slideIndex = 1;
+
+        const modal = document.getElementById('projectModal');
+        const body = document.body;
+
+        const wrapper = document.querySelector('.slider-wrapper');
+        const prevBtn = document.querySelector('.slider-btn.prev');
+        const nextBtn = document.querySelector('.slider-btn.next');
+
+        const dotsContainer = document.querySelector('.slider-dots');
+
+        function openProject(title, images, desc, live, source) {
+            slideIndex = 1;
+
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerHTML = desc + '<br><br><span style="color: #ccc; font-size: 0.95rem;">Interested in this work? Contact me: </span><br><a href="https://mail.google.com/mail/?view=cm&fs=1&to=fauxfireofficial@gmail.com" target="_blank" style="color: #ffd700; text-decoration: none; font-weight: bold; font-size: 1.05rem; user-select: text;" onclick="event.stopPropagation();"><i class="fas fa-envelope"></i> fauxfireofficial@gmail.com</a>';
+            const liveBtn = document.getElementById('liveLink');
+            const sourceBtn = document.getElementById('sourceLink');
+
+            if (live && live !== '#') {
+                liveBtn.href = live;
+                liveBtn.style.display = 'inline-block';
+            } else {
+                liveBtn.style.display = 'none';
+            }
+
+            if (source && source !== '#') {
+                sourceBtn.href = source;
+                sourceBtn.style.display = 'inline-block';
+            } else {
+                sourceBtn.style.display = 'none';
+            }
+
+            // Clear existing slides
+            wrapper.innerHTML = '';
+
+            // Ensure images is an array
+            if (!Array.isArray(images)) {
+                images = [images];
+            }
+
+            // Create slides
+            images.forEach((imgSrc, index) => {
+                const img = document.createElement('img');
+                img.className = 'slide';
+                img.src = imgSrc;
+                img.alt = `Preview ${index + 1}`;
+                img.onclick = function () { viewFullImage(this.id); };
+                img.id = `modalImg${index + 1}`;
+                wrapper.appendChild(img);
+            });
+
+            const totalSlides = images.length;
+            wrapper.dataset.totalSlides = totalSlides;
+
+            if (totalSlides > 1) {
+                // Update wrapper width: eg. 5 slides => 500% width
+                wrapper.style.width = `${totalSlides * 100}%`;
+
+                prevBtn.style.display = 'block';
+                nextBtn.style.display = 'block';
+
+                // Rebuild dots
+                dotsContainer.innerHTML = '';
+                dotsContainer.style.display = 'flex';
+
+                for (let i = 1; i <= totalSlides; i++) {
+                    const dot = document.createElement('span');
+                    dot.className = 'dot';
+                    dot.onclick = function () { currentSlide(i); };
+                    dotsContainer.appendChild(dot);
+                }
+
+                // Set flex basis for each slide: eg. 5 slides => 20%
+                const slides = wrapper.querySelectorAll('.slide');
+                slides.forEach(slide => {
+                    slide.style.flex = `0 0 ${100 / totalSlides}%`;
+                });
+
+            } else {
+                wrapper.style.width = "100%";
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+                dotsContainer.style.display = 'none';
+
+                const slides = wrapper.querySelectorAll('.slide');
+                if (slides.length > 0) slides[0].style.flex = "0 0 100%";
+            }
+
+            showSlides(slideIndex);
+
+            modal.style.display = 'block';
+            body.style.overflow = 'hidden';
+        }
+
+        function moveSlide(step) {
+            showSlides(slideIndex += step);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            const totalSlides = parseInt(wrapper.dataset.totalSlides || 1);
+
+            if (n > totalSlides) slideIndex = 1;
+            if (n < 1) slideIndex = totalSlides;
+
+            // Calculate move percentage
+            // If 5 slides (500% width), each slide view is 100% / 5 = 20% of wrapper.
+            // Shift is -(index-1) * (100/total)
+            const movePercent = totalSlides > 1
+                ? -(slideIndex - 1) * (100 / totalSlides)
+                : 0;
+
+            wrapper.style.transform = `translateX(${movePercent}%)`;
+            wrapper.style.transition = "transform 0.5s ease-in-out";
+
+            // Update dots
+            const dots = dotsContainer.querySelectorAll('.dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+            if (dots[slideIndex - 1]) {
+                dots[slideIndex - 1].classList.add('active');
+            }
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            body.style.overflow = 'auto';
+        }
+
+        function viewFullImage(id) {
+            const img = document.getElementById(id);
+            if (!img || !img.src || img.src.includes('undefined')) return;
+
+            document.getElementById('fullViewImg').src = img.src;
+            document.getElementById('imageViewer').style.display = 'flex';
+        }
+
+        function viewCurrentSlideFull() {
+            viewFullImage(`modalImg${slideIndex}`);
+        }
+
+        function closeImageViewer(e) {
+            if (e) e.stopPropagation();
+            document.getElementById('imageViewer').style.display = 'none';
+        }
+
+        // Overlay click handling
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+            if (e.target.id === 'imageViewer') closeImageViewer(e);
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (modal.style.display === 'block') {
+                if (e.key === 'ArrowLeft') moveSlide(-1);
+                if (e.key === 'ArrowRight') moveSlide(1);
+                if (e.key === 'Escape') closeModal();
+            }
+        });
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const dropdowns = document.querySelectorAll('.dropdown');
+
+            // Toggle hamburger and menu
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+
+            // Close all dropdowns when toggling menu
+            dropdowns.forEach(dropdown => {
+                dropdown.style.display = 'none';
+            });
+
+            // Toggle body scroll
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Mobile dropdown functionality
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                if (window.innerWidth <= 768) {
+                    const parent = this.closest('.nav-item');
+                    const dropdown = parent.querySelector('.dropdown');
+
+                    if (dropdown) {
+                        e.preventDefault();
+                        const isVisible = dropdown.style.display === 'block';
+
+                        // Close all other dropdowns
+                        document.querySelectorAll('.dropdown').forEach(d => {
+                            d.style.display = 'none';
+                        });
+
+                        // Toggle current dropdown
+                        dropdown.style.display = isVisible ? 'none' : 'block';
+                    }
+                }
+            });
+        });
+
+        // Close menu when clicking outside (mobile only)
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.querySelector('.nav-links');
+
+                if (navLinks.classList.contains('active') &&
+                    !hamburger.contains(e.target) &&
+                    !navLinks.contains(e.target)) {
+                    toggleMenu();
+                }
+            }
+        });
+
+        // Close mobile menu when clicking on simple nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            const parent = link.closest('.nav-item');
+            const dropdown = parent.querySelector('.dropdown');
+
+            if (!dropdown) {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        toggleMenu();
+                    }
+                });
+            }
+        });
+
+        // Desktop dropdown hover functionality
+        if (window.innerWidth > 768) {
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    const dropdown = this.querySelector('.dropdown');
+                    if (dropdown) {
+                        dropdown.style.display = 'block';
+                    }
+                });
+
+                item.addEventListener('mouseleave', function () {
+                    const dropdown = this.querySelector('.dropdown');
+                    if (dropdown) {
+                        dropdown.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // Update on window resize
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 768) {
+                // Reset mobile menu
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.querySelector('.nav-links');
+                if (hamburger) hamburger.classList.remove('active');
+                if (navLinks) navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+
+                // Hide all dropdowns
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+
+        // Mobile Bottom Nav Logic
+        function toggleMobileProjects(btn) {
+            const dropdown = document.getElementById('mobileProjectsDropdown');
+            dropdown.classList.toggle('show');
+
+            // Toggle active state
+            document.querySelectorAll('.mobile-nav-item').forEach(item => item.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Close if clicking outside
+            if (dropdown.classList.contains('show')) {
+                const closeDropdown = (e) => {
+                    if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
+                        dropdown.classList.remove('show');
+                        document.removeEventListener('click', closeDropdown);
+                    }
+                };
+                setTimeout(() => document.addEventListener('click', closeDropdown), 10);
+            }
+        }
+
+        function setActiveNav(element) {
+            document.querySelectorAll('.mobile-nav-item').forEach(item => item.classList.remove('active'));
+            element.classList.add('active');
+
+            // Hide projects dropdown if open
+            document.getElementById('mobileProjectsDropdown').classList.remove('show');
+        }
+    </script>
+
+
+
+</body>
+
+</html>
