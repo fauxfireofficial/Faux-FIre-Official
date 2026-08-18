@@ -21,19 +21,6 @@
                         <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
                     </div>
 
-                    <!-- <div class="nav-item">
-                        <a href="index.html#projects" class="nav-link">My Work <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown">
-                            <a href="index.html#fullstack-projects">Web Systems (PHP/MySQL)</a>
-
-                            <a href="index.html#frontend-projects">Interactive UI (HTML/CSS/JS)</a>
-
-                            <a href="index.html#creative-works">Graphics & Branding</a>
-
-                            <a href="https://github.com/M-Iqbal-Dev" target="_blank">View Source Code</a>
-                        </div>
-                    </div> -->
-
                     <div class="nav-item">
                         <a href="index.html#about" class="nav-link"><i class="fas fa-user"></i> About</a>
                     </div>
@@ -50,7 +37,18 @@
         <div class="container">
             <div class="section-header">
                 <h2>Get In <span>Touch</span></h2>
-                <p>Ready to start your project? Fill out the form below.</p>
+                <p>Prefer direct mail? Click below or fill out the project form.</p>
+            </div>
+
+            <!-- Direct Mail Link Banner (Purely using existing classes & inline styling) -->
+            <div class="input-group" style="text-align: center; margin-bottom: 30px;">
+                <label style="font-size: 1.1rem; margin-bottom: 8px;">Direct Email</label>
+                <a href="mailto:fauxfireofficial@gmail.com" class="btn secondary-btn" style="width: 100%; justify-content: center; align-items: center; gap: 10px; display: inline-flex;">
+    <i class="fas fa-envelope" style="position: relative; top: 1px;"></i>
+    <span>fauxfireofficial@gmail.com</span>
+</a>
+               
+                <p class="form-helper" style="margin-top: 8px;">Tap above to send a direct mail via Gmail / Mail App</p>
             </div>
 
             <form action="https://api.web3forms.com/submit" method="POST" id="contact-form"
@@ -65,10 +63,10 @@
                         <input type="text" name="name" placeholder="Enter your name" required>
                     </div>
                     <div class="input-group">
-    <label>Email Address</label>
-    <input type="email" name="email" placeholder="example@gmail.com" required>
-    <p class="form-helper">Please double-check your email so I can get back to you!</p>
-</div>
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                        <p class="form-helper">Please double-check your email so I can get back to you!</p>
+                    </div>
                 </div>
 
                 <div class="input-group">
@@ -93,14 +91,14 @@
         </div>
     </section>
 
-  <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column brand-col">
                     <h3><span>Faux-Fire</span> Official</h3>
                     <p>Delivering high-performance web systems and full-stack solutions from Karachi, Pakistan.</p>
                     <div class="social-links">
-                        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+                         <a href="https://www.facebook.com/share/1C2aJ3u5T9/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/fauxfire.universe"><i class="fab fa-instagram"></i></a>
                         <a href="https://github.com/fauxfireofficial"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/muhammad-iqbal-9241a6401"><i class="fab fa-linkedin-in"></i></a>
@@ -109,10 +107,9 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#about">About</a></li>
-                        
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#about">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-column contact-col">
@@ -129,7 +126,6 @@
         </div>
     </footer>
 
-   
     <nav class="mobile-bottom-nav">
         <a href="index.html#home" class="mobile-nav-item">
             <i class="fas fa-home"></i>
@@ -145,77 +141,73 @@
         </a>
     </nav>
 
-   <script>
-    const form = document.getElementById('contact-form');
-    const result = document.getElementById('form-result');
-    const btnText = document.querySelector('#submit-btn span');
+    <script>
+        const form = document.getElementById('contact-form');
+        const result = document.getElementById('form-result');
+        const btnText = document.querySelector('#submit-btn span');
 
-    // Email check karne ka function (Regex)
-    function validateEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email.toLowerCase());
-    }
-
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const userEmail = formData.get('email');
-
-            // 1. Pehle Validation check karein
-            if (!validateEmail(userEmail)) {
-                result.innerHTML = `<div class="error-msg">❌ Please enter a valid email address!</div>`;
-                return; // Yahin rok do, fetch mat chalao
-            }
-
-            // 2. Agar email theek hai, toh sending shuru karein
-            btnText.innerText = "Sending...";
-            document.getElementById('submit-btn').disabled = true;
-
-            fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                body: formData
-            })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    result.innerHTML = `<div class="success-msg">✅ Message sent successfully! I'll contact you soon.</div>`;
-                    form.reset();
-                } else {
-                    result.innerHTML = `<div class="error-msg">❌ ${json.message}</div>`;
-                }
-            })
-            .catch(error => {
-                result.innerHTML = `<div class="error-msg">Something went wrong. Please try again!</div>`;
-            })
-            .then(function () {
-                btnText.innerText = "Send Message";
-                document.getElementById('submit-btn').disabled = false;
-                setTimeout(() => {
-                    result.innerHTML = "";
-                }, 5000);
-            });
-        });
-    }
-
-    // Mobile Nav Logic (Bilkul theek hai)
-    function toggleMobileProjects(btn) {
-        const dropdown = document.getElementById('mobileProjectsDropdown');
-        dropdown.classList.toggle('show');
-        document.querySelectorAll('.mobile-nav-item').forEach(item => item.classList.remove('active'));
-        btn.classList.add('active');
-
-        if (dropdown.classList.contains('show')) {
-            const closeDropdown = (e) => {
-                if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
-                    dropdown.classList.remove('show');
-                    document.removeEventListener('click', closeDropdown);
-                }
-            };
-            setTimeout(() => document.addEventListener('click', closeDropdown), 10);
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email.toLowerCase());
         }
-    }
-</script>
+
+        if (form) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+                const userEmail = formData.get('email');
+
+                if (!validateEmail(userEmail)) {
+                    result.innerHTML = `<div class="error-msg">❌ Please enter a valid email address!</div>`;
+                    return;
+                }
+
+                btnText.innerText = "Sending...";
+                document.getElementById('submit-btn').disabled = true;
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = `<div class="success-msg">✅ Message sent successfully! I'll contact you soon.</div>`;
+                        form.reset();
+                    } else {
+                        result.innerHTML = `<div class="error-msg">❌ ${json.message}</div>`;
+                    }
+                })
+                .catch(error => {
+                    result.innerHTML = `<div class="error-msg">Something went wrong. Please try again!</div>`;
+                })
+                .then(function () {
+                    btnText.innerText = "Send Message";
+                    document.getElementById('submit-btn').disabled = false;
+                    setTimeout(() => {
+                        result.innerHTML = "";
+                    }, 5000);
+                });
+            });
+        }
+
+        function toggleMobileProjects(btn) {
+            const dropdown = document.getElementById('mobileProjectsDropdown');
+            dropdown.classList.toggle('show');
+            document.querySelectorAll('.mobile-nav-item').forEach(item => item.classList.remove('active'));
+            btn.classList.add('active');
+
+            if (dropdown.classList.contains('show')) {
+                const closeDropdown = (e) => {
+                    if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
+                        dropdown.classList.remove('show');
+                        document.removeEventListener('click', closeDropdown);
+                    }
+                };
+                setTimeout(() => document.addEventListener('click', closeDropdown), 10);
+            }
+        }
+    </script>
 
 </body>
 
