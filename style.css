@@ -1855,3 +1855,182 @@ textarea::placeholder {
         font-size: 2rem;
     }
 }
+/* About Section Base */
+.about {
+    padding: 80px 0;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-text {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Heading Styling */
+.about .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.about .section-title span,
+.my-name span {
+    color: #ffd700;
+}
+
+.name-box {
+    margin-bottom: 20px;
+}
+
+.name-box h4 {
+    font-size: 0.85rem;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.my-name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.about-desc {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 35px;
+}
+
+/* Details Grid */
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.detail-item:hover {
+    transform: translateY(-3px);
+    border-color: #ffd700;
+}
+
+.detail-icon {
+    font-size: 1.8rem;
+    color: #ffd700;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.detail-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.detail-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #aaaaaa;
+}
+
+.detail-item strong {
+    color: #ffffff;
+}
+
+/* Buttons */
+.about-btns {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.about-btns .primary-btn {
+    background: #ffd700;
+    color: #000000;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.about-btns .primary-btn:hover {
+    background: #e6c200;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about {
+        padding: 50px 0;
+    }
+    
+    .my-name {
+        font-size: 2rem;
+    }
+
+    .about-desc {
+        font-size: 0.98rem;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .detail-item {
+        padding: 15px;
+    }
+
+    .about-btns .primary-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: #0d0d0d;
+}
+
+/* Spider Net Canvas Styling */
+#spiderNetCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none; /* Mouse events reach elements underneath */
+}
+
+/* Content stays above Canvas */
+.hero-wrapper {
+    position: relative;
+    z-index: 2;
+}
