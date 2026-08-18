@@ -37,7 +37,7 @@
                     <div class="nav-item"><a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></div>
                     <div class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></div>
                     <div class="nav-item"><a href="https://github.com/fauxfireofficial" target="_blank" class="nav-link"><i class="fab fa-github"></i> GitHub</a></div>
-                   <div class="nav-item">
+                    <div class="nav-item">
     <a href="contact.html" class="nav-link">
         <i class="fas fa-envelope"></i> Contact
     </a>
@@ -47,43 +47,55 @@
         </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="container hero-wrapper">
-            <div class="hero-content">
-                <!-- <h4>Full-Stack Developer — PHP · Laravel · .NET MVC · C#</h4> -->
-                <h1>Hi, I'm <span class="highlight">Muhammad Iqbal</span></h1>
-                <p>I craft high-performance web applications using <span>PHP, Laravel & MySQL</span> on the backend, scalable enterprise solutions with <span>.NET MVC & C#</span>, and pixel-perfect frontends with <span>HTML, CSS & JavaScript</span> — turning your ideas into powerful digital products.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn primary-btn">Explore Projects</a>
-                   
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="Assest/bgimage.png" alt="Muhammad Iqbal Developer">
-            </div>
-        </div>
-    </section>
+   <section class="hero" id="home">
+    <!-- Interactive Spider Net Canvas Background -->
+    <canvas id="spiderNetCanvas"></canvas>
 
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">My <span>Services</span></h2>
-            <p class="section-subtitle">What I can do for you</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-code service-icon"></i>
-                    <h3>Web Development</h3>
-                    <p>Building responsive, high-performance websites using modern technologies like HTML5, CSS3, JavaScript, and PHP.</p>
-                </div>
+    <div class="container hero-wrapper">
+        <div class="hero-content">
+            <h4 class="fade-in">Full-Stack Web Developer</h4>
+            <h1 class="fade-in">Hi, I'm <span class="highlight">Muhammad Iqbal</span></h1>
+            <p class="fade-in">
+                I build high-performance web applications using <span>.NET Core, Laravel & PHP</span>. Specializing in scalable backends, clean APIs, and dynamic user experiences that turn ideas into digital reality.
+            </p>
 
-                <div class="service-card">
-                    <i class="fas fa-server service-icon"></i>
-                    <h3>Backend Solutions</h3>
-                    <p>Designing robust server-side architectures and secure database management systems for scalable applications.</p>
-                </div>
+            <div class="hero-btns fade-in">
+                <a href="#projects" class="btn primary-btn">Explore Projects</a>
             </div>
         </div>
-    </section>
 
+        <div class="hero-image fade-in">
+            <img src="Assest/bgimage.png" alt="Muhammad Iqbal Developer">
+        </div>
+    </div>
+</section>
+
+  <section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">My <span>Services</span></h2>
+        <p class="section-subtitle">What I can do for you</p>
+
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <i class="fas fa-code service-icon"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive, high-performance web applications using HTML5, CSS3, JavaScript, PHP, and Laravel.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <i class="fas fa-server service-icon"></i>
+                <h3>Backend Solutions</h3>
+                <p>Developing robust server-side architectures, RESTful APIs, and secure database systems using .NET Core, PHP, and MySQL.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <i class="fas fa-database service-icon"></i>
+                <h3>Database & API Integration</h3>
+                <p>Designing structured database schemas, optimizing queries, and connecting third-party services for scalable applications.</p>
+            </div>
+        </div>
+    </div>
+</section>
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title">My <span>Projects</span></h2>
@@ -131,30 +143,44 @@
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="container about-wrapper">
-            <div class="about-image">
-                <div class="image-frame">
-                    <img src="Assest/MyPhoto.png" alt="Muhammad Iqbal">
+   <section class="about" id="about">
+    <div class="container">
+        <div class="about-text fade-in">
+            <h2 class="section-title">About <span>Me</span></h2>
+
+            <div class="name-box">
+                <h4>MY NAME IS</h4>
+                <h3 class="my-name">Muhammad <span>Iqbal</span></h3>
+            </div>
+
+            <p class="about-desc">
+                I am a passionate <strong>Full-Stack Developer & Visual Designer</strong> from Karachi. My journey started with a curiosity for game logic and visual design, which evolved into building robust web solutions and enterprise-grade backends. I don't just write code; I design experiences that are functional, beautiful, and user-centric.
+            </p>
+
+            <div class="about-details">
+                <div class="detail-item">
+                    <i class="fas fa-code detail-icon"></i>
+                    <div>
+                        <h4>Full-Stack Development</h4>
+                        <p>Crafting seamless applications with <strong>HTML5, CSS3, Laravel, .NET Core, PHP, MySQL,</strong> and <strong>Modern JavaScript</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <i class="fas fa-bezier-curve detail-icon"></i>
+                    <div>
+                        <h4>Graphic Designer</h4>
+                        <p>Designing high-fidelity templates and visual assets using <strong>Figma</strong> and <strong>Illustrator</strong>.</p>
+                    </div>
                 </div>
             </div>
-            <div class="about-text">
-                <h3 class="my-name">Muhammad <span>Iqbal</span></h3>
-                <p>I am a passionate <strong>Full-Stack Developer</strong> from Karachi. My journey started with a curiosity for game logic and web technologies, which evolved into building robust web solutions and enterprise-grade backends.</p>
-                <div class="about-details">
-                    <div class="detail-item">
-                        <i class="fas fa-code"></i>
-                        <div><h4>Full-Stack Development</h4><p>Laravel, PHP, MySQL, JavaScript, .NET MVC, C#</p></div>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fas fa-server"></i>
-                        <div><h4>Backend Engineering</h4><p>PHP, MySQL, REST APIs, Firebase</p></div>
-                    </div>
-                </div>
-                <a href="#projects" class="btn primary-btn" style="background: #ffd700; color: #000;">View My Work</a>
+
+            <div class="about-btns">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer class="footer">
         <div class="container">
@@ -163,8 +189,9 @@
                     <h3><span>Faux-Fire</span> Official</h3>
                     <p>Delivering high-performance web systems and full-stack solutions from Karachi, Pakistan.</p>
                     <div class="social-links">
-                        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
-                        <a href="https://www.instagram.com/fauxfire.universe"><i class="fab fa-instagram"></i></a>
+                       
+                         <a href="https://www.facebook.com/share/1C2aJ3u5T9/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/fauxfire.studio"><i class="fab fa-instagram"></i></a>
                         <a href="https://github.com/fauxfireofficial"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/muhammad-iqbal-9241a6401"><i class="fab fa-linkedin-in"></i></a>
                     </div>
@@ -428,6 +455,119 @@
         
         // Load projects on page load
         loadProjects();
+    </script>
+    <script>
+        const canvas = document.getElementById('spiderNetCanvas');
+const ctx = canvas.getContext('2d');
+
+let width, height;
+let particles = [];
+
+// Screen size setup
+function resize() {
+    width = canvas.width = canvas.offsetWidth;
+    height = canvas.height = canvas.offsetHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Mouse tracking
+const mouse = {
+    x: null,
+    y: null,
+    radius: 120 // Mouse interaction range
+};
+
+const heroSection = document.getElementById('home');
+heroSection.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+});
+
+heroSection.addEventListener('mouseleave', () => {
+    mouse.x = null;
+    mouse.y = null;
+});
+
+// Particle Class (No Shadow / Simple Color Lines)
+class Particle {
+    constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 1.2; // Smooth movement speed
+        this.vy = (Math.random() - 0.5) * 1.2;
+        this.size = 2;
+    }
+
+    update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        // Bounce from boundaries
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+    }
+
+    draw() {
+        ctx.fillStyle = '#ffd700'; // Yellow Accent Dots
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+    }
+}
+
+// Particle Count (Mobile vs Laptop adjustment for optimal speed)
+const particleCount = window.innerWidth < 768 ? 35 : 75;
+for (let i = 0; i < particleCount; i++) {
+    particles.push(new Particle());
+}
+
+// Connect Particles & Mouse Lines (Spider Net Logic)
+function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+
+        // Connect with other nearby particles
+        for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < 100) {
+                ctx.strokeStyle = `rgba(255, 215, 0, ${1 - dist / 100})`; // Smooth line fade
+                ctx.lineWidth = 0.5;
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.stroke();
+            }
+        }
+
+        // Connect with Mouse Cursor
+        if (mouse.x !== null && mouse.y !== null) {
+            const mdx = particles[i].x - mouse.x;
+            const mdy = particles[i].y - mouse.y;
+            const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+
+            if (mdist < mouse.radius) {
+                ctx.strokeStyle = `rgba(255, 215, 0, ${1 - mdist / mouse.radius})`;
+                ctx.lineWidth = 0.8;
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(mouse.x, mouse.y);
+                ctx.stroke();
+            }
+        }
+    }
+
+    requestAnimationFrame(animate);
+}
+
+animate();
     </script>
 </body>
 </html>
